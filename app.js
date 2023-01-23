@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 // in latest body-parser use like below.
 app.use(bodyParser.urlencoded({ extended: true }));
-const url ='mongodb://127.0.0.1:27017/quizzes-gomycode' ;
+const url ='mongodb+srv://gomycode:gomycode@quizzes-gomycode.e2udpvd.mongodb.net/?retryWrites=true&w=majority' ;
 const connect = mongoose.connect(url );
 connect.then((db)=>{
   console.log(url);
